@@ -19,8 +19,11 @@
 
 
 
- var enterWord = prompt("введите предложение и я выберу самое длинное слово", " Я пишу на Reactdddddd")
+ var enterWord = prompt("enter a sentence and I will choose the longest word", " how to hack NASA with html ")
 
  FindLongestString(enterWord);
+
+
+                   //////////////////// TASK N2  //////////////////////////
 
 
