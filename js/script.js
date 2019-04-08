@@ -73,7 +73,6 @@ let ChangeLetters = (str) => {
 
     output = capitalizeVowels(output);
 
-    // code goes here
     return output;
 
 }
@@ -109,5 +108,7 @@ function capitalizeVowels(str) {
 
 let characters = prompt(" TASK №3. Enter your characters and I'll do it right", "react")
 ChangeLetters(characters)
+
+
 
 
