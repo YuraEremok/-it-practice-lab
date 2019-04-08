@@ -1,7 +1,4 @@
-
-
 let showNotification = () => {
-
 
 
     let childElement = document.querySelector('.notification');
@@ -9,11 +6,11 @@ let showNotification = () => {
     let wrapperTop = document.createElement('div');
     wrapperTop.classList.add('notification-main');
 
-    let notifiList = document.createElement('ul');
-    notifiList.classList.add('slides-content', 'js--slider');
+    let notificationList = document.createElement('ul');
+    notificationList.classList.add('slides-content', 'js--slider');
 
     childElement.appendChild(wrapperTop);
-    wrapperTop.appendChild(notifiList);
+    wrapperTop.appendChild(notificationList);
 
     notificationData.forEach(renderItemNotifi);
 
@@ -21,7 +18,7 @@ let showNotification = () => {
         let li = document.createElement('li');
         li.classList.add('slide');
 
-        notifiList.appendChild(li);
+        notificationList.appendChild(li);
 
         let notifiText = document.createElement('span');
         notifiText.classList.add('slide-info');
@@ -36,31 +33,31 @@ let showNotification = () => {
     exitNotification.setAttribute('tabindex', '6');
     wrapperTop.appendChild(exitNotification);
 
-    let closeNitifiIcon = document.createElement('span');
-    closeNitifiIcon.classList.add('fa', 'fa-times', 'close-notif__icon');
-    closeNitifiIcon.setAttribute('aria-hidden', 'true');
-    exitNotification.appendChild(closeNitifiIcon);
+    let closeButton = document.createElement('span');
+    closeButton.classList.add('fa', 'fa-times', 'close-notif__icon');
+    closeButton.setAttribute('aria-hidden', 'true');
+    exitNotification.appendChild(closeButton);
 
-    let wrapperDown = document.createElement('div');
-    wrapperDown.classList.add('button-content');
-    childElement.appendChild(wrapperDown);
+    let buttonContent = document.createElement('div');
+    buttonContent.classList.add('button-content');
+    childElement.appendChild(buttonContent);
 
     let checkBox = document.createElement('input');
     checkBox.classList.add('notification-checkbox');
     checkBox.setAttribute('type', 'checkbox');
-    wrapperDown.appendChild(checkBox);
+    buttonContent.appendChild(checkBox);
 
     let checkBoxLable = document.createElement('span');
     checkBoxLable.classList.add('checkbox-caption');
     checkBoxLable.innerText = 'Disable Tips';
-    wrapperDown.appendChild(checkBoxLable);
+    buttonContent.appendChild(checkBoxLable);
 
     let sliderNav = document.createElement('div');
     sliderNav.classList.add('slider-nav');
-    wrapperDown.appendChild(sliderNav);
+    buttonContent.appendChild(sliderNav);
 
     let btnPrev = document.createElement('button');
-    btnPrev.classList.add('btn-notif', 'slide__prev', 'js-slide__prev');
+    btnPrev.classList.add('btn-notification', 'slide__prev', 'js-slide__prev');
     sliderNav.appendChild(btnPrev);
 
     let btnPrevIcon = document.createElement('span');
@@ -74,14 +71,13 @@ let showNotification = () => {
     }
 
     let btnNext = document.createElement('button');
-    btnNext.classList.add('btn-notif', 'slide__next', 'js-slide__next');
+    btnNext.classList.add('btn-notification', 'slide__next', 'js-slide__next');
     sliderNav.appendChild(btnNext);
 
     let btnNextIcon = document.createElement('span');
     btnNextIcon.classList.add('fas', 'fa-hand-point-right');
     btnNext.appendChild(btnNextIcon);
 }
-
 
 
 let notificationData = [

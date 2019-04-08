@@ -91,7 +91,7 @@
     margin-right: 10px;
 }
 
-.btn-notif {
+.btn-notification {
     width: 20px;
     height: 20px;
     background-color: transparent;
@@ -99,7 +99,7 @@
     outline: none;
 }
 
-.btn-notif:hover {
+.btn-notification:hover {
     cursor: pointer;
 }
 

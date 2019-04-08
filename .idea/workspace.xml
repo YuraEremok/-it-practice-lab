@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b238fd4-3dc2-4d8a-9c28-4ef93a9039a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/notification/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/notification/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/notification/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/notification/style.css" afterDir="false" />
     </list>
@@ -21,8 +20,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notification/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="1" selection-end-column="5" />
+            <state relative-caret-position="447">
+              <caret line="93" column="10" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -30,8 +29,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notification/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+            <state relative-caret-position="1347">
+              <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -62,7 +61,11 @@
       <find>set</find>
       <find>notification-w</find>
       <find>fa-chevron</find>
+      <find>notif</find>
+      <find>btn-notif</find>
       <find>notification-wrap</find>
+      <find>slide__prev</find>
+      <find>js-slide__prev</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,8 +77,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/notification/notification.html" />
-        <option value="$PROJECT_DIR$/notification/style.css" />
         <option value="$PROJECT_DIR$/notification/index.html" />
+        <option value="$PROJECT_DIR$/notification/style.css" />
         <option value="$PROJECT_DIR$/notification/script.js" />
       </list>
     </option>
@@ -157,12 +160,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554708381300</updated>
-      <workItem from="1554708382663" duration="16694000" />
+      <workItem from="1554708382663" duration="17490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16694000" />
+    <option name="totallyTimeSpent" value="17490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -208,13 +211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notification/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notification/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -222,10 +218,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notification/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="93" column="10" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notification/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+        <state relative-caret-position="1347">
+          <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
         </state>
       </provider>
     </entry>
