@@ -1,21 +1,18 @@
-let notificationData = [
-    "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
-    "Build encapsulated components that manage their own state, then compose them to make complex UIs.",
-    "Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
-    "We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.",
-    "React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props."
-]
+
 
 let showNotification = () => {
-    let parentElem = document.querySelector('#notification');
+
+
+
+    let childElement = document.querySelector('.notification');
 
     let wrapperTop = document.createElement('div');
-    wrapperTop.classList.add('notification__row_top');
+    wrapperTop.classList.add('notification-main');
 
     let notifiList = document.createElement('ul');
-    notifiList.classList.add('slides', 'js--slider');
+    notifiList.classList.add('slides-content', 'js--slider');
 
-    parentElem.appendChild(wrapperTop);
+    childElement.appendChild(wrapperTop);
     wrapperTop.appendChild(notifiList);
 
     notificationData.forEach(renderItemNotifi);
@@ -27,26 +24,26 @@ let showNotification = () => {
         notifiList.appendChild(li);
 
         let notifiText = document.createElement('span');
-        notifiText.classList.add('slide__content');
+        notifiText.classList.add('slide-info');
 
         li.appendChild(notifiText);
 
         notifiText.innerText = element;
     }
 
-    let closeNotifi = document.createElement('div');
-    closeNotifi.classList.add('exit-button');
-    closeNotifi.setAttribute('tabindex', '6');
-    wrapperTop.appendChild(closeNotifi);
+    let exitNotification = document.createElement('div');
+    exitNotification.classList.add('exit-button');
+    exitNotification.setAttribute('tabindex', '6');
+    wrapperTop.appendChild(exitNotification);
 
     let closeNitifiIcon = document.createElement('span');
     closeNitifiIcon.classList.add('fa', 'fa-times', 'close-notif__icon');
     closeNitifiIcon.setAttribute('aria-hidden', 'true');
-    closeNotifi.appendChild(closeNitifiIcon);
+    exitNotification.appendChild(closeNitifiIcon);
 
     let wrapperDown = document.createElement('div');
-    wrapperDown.classList.add('notification__row_down');
-    parentElem.appendChild(wrapperDown);
+    wrapperDown.classList.add('button-content');
+    childElement.appendChild(wrapperDown);
 
     let checkBox = document.createElement('input');
     checkBox.classList.add('notification-checkbox');
@@ -72,7 +69,7 @@ let showNotification = () => {
 
     for (let i = 0; i < notificationData.length; i++) {
         let slideDot = document.createElement('span');
-        slideDot.classList.add('slide__dot');
+        slideDot.classList.add('dot');
         sliderNav.appendChild(slideDot);
     }
 
@@ -85,6 +82,17 @@ let showNotification = () => {
     btnNext.appendChild(btnNextIcon);
 }
 
+
+
+let notificationData = [
+    "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+    "Build encapsulated components that manage their own state, then compose them to make complex UIs.",
+    "Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
+    "We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.",
+    "React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props."
+]
+
+
 showNotification();
 
 window.onload = () => {
@@ -92,7 +100,7 @@ window.onload = () => {
     let notification = document.querySelector('.notification');
     let allSlides = document.querySelectorAll('.slide');
     let checkbox = document.querySelector('.notification-checkbox');
-    let sliderControls = document.querySelectorAll('.slide__dot');
+    let sliderControls = document.querySelectorAll('.dot');
     let prevSliderButton = document.querySelector('.js-slide__prev');
     let nextSliderButton = document.querySelector('.js-slide__next');
     let sliderStart = 0;
@@ -101,7 +109,7 @@ window.onload = () => {
     document.querySelector('.notification-checkbox').checked = checked;
 
     if (allSlides) {
-        allSlides[0].classList.add('slide_active');
+        allSlides[0].classList.add('slide-on');
     }
 
     if (checkbox.checked === true) {
@@ -162,12 +170,12 @@ window.onload = () => {
         event.preventDefault();
 
         for (let i = 0; i < allSlides.length; i++) {
-            allSlides[i].classList.remove('slide_active');
-            sliderControls[i].classList.remove('slide__dot_active');
+            allSlides[i].classList.remove('slide-on');
+            sliderControls[i].classList.remove('dot-active');
         }
 
-        allSlides[id].classList.add('slide_active');
-        sliderControls[id].classList.add('slide__dot_active');
+        allSlides[id].classList.add('slide-on');
+        sliderControls[id].classList.add('dot-active');
 
         sliderStart = id;
     }
